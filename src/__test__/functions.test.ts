@@ -11,9 +11,9 @@ describe("addTodo", () => {
     test("Should add new todo to array", () => {
         // Arrange
         let todo: Todo[] = [];
+        let todoText = "Buy dogfood";
 
         // Act
-        let todoText = "Buy dogfood";
         let result = functions.addTodo(todoText, todo);
 
         // Assert
@@ -24,9 +24,9 @@ describe("addTodo", () => {
     test("Should not add new todo to array cause of to few letters", () => {
         // Arrange
         let todo: Todo[] = [];
-
-        // Act
         let todoText = "Hi";
+        
+        // Act
         let result = functions.addTodo(todoText, todo);
         
         // Assert
